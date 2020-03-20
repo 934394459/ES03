@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="citys">
+        <d1>广东</d1>
+        <dd>广州</dd>
+        <dd>深圳</dd>
+        <d1>湖南</d1>
+        <dd>长沙</dd>
+        <dd>衡阳</dd>(
+    </div>
+    <script>
+        document.getElementById("citys").onclick =
+        function ({target:{tagName,style}}){
+            document.getElementById("list1").onclick = function ({target:{tagName,style}}) { 
+if (tagName == "LI") {
+   style.color = style.color == "" ? "red" : "";
+   }
+}
+
+        }
+    </script>
+</body>
+</html>
